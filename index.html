@@ -12,44 +12,40 @@
 
     <h1>Dipadana Putu Calculator Prototype</h1>
 
-    <input type="number" name="num" id="num" />
-    <input type="number" name="num2" id="num2" />
-    <input type="number" name="num3" id="result">
+    <input type="text" name="num" id="num" readonly />
+    <input type="text" name="result" id="result" readonly />
+    <p id="history"></p>
 
-    <button id="btn4" onclick="input.value += 4">4</button>
-    <button id="btn5" onclick="input.value += 5">5</button>
+    <button id="btn4" onclick="document.querySelector('#add').removeAttribute('disabled');
+    input.value += '4';">4</button>
 
-    <button id="add" onclick="input = document.querySelector('#num2'); operasi = 'plus'; console.log('plus')">+</button>
-    <button id="add"
-        onclick="input = document.querySelector('#num2'); operasi = 'minus'; console.log('minus')">-</button>
+    <button id="btn5" onclick="document.querySelector('#add').removeAttribute('disabled');
+    input.value += '5';" ;>5</button>
+
+    <button id="add" onclick="input.value += '+';
+    
+    attr = document.createAttribute('disabled');
+    document.querySelector('#add').setAttributeNode(attr);
+
+    ">+</button>
 
     <button id="clear" onclick="
-        document.querySelector('#num').value = '';
-        document.querySelector('#num2').value = '';
-        document.querySelector('#result').value = '';
-        input = document.querySelector('#num');
-        ">clear</button>
+        document.getElementById('history').innerHTML = input.value + '=' + hasil.value;
+        hasil.value = ''; 
+        input.value = '';
+    ">clear</button>
 
     <button id="hasil" onclick=" 
-    
-    if (operasi == 'plus') {
-        var jumlah = parseInt(num.value) + parseInt(num2.value);
-        document.querySelector('#result').value = jumlah;
-    }
-    else if (operasi == 'minus') {
-        var jumlah = parseInt(num.value) - parseInt(num2.value);
-        document.querySelector('#result').value = jumlah;
-    } 
-    else {
-        console.log('error');
-    }
+    hasil.value = eval(input.value);
     ">=</button>
 
     <script>
-
-
-        var add = document.getElementById('add');
+        var hasil = document.getElementById('result');
         var input = document.querySelector('#num');
+
+
+
+
     </script>
 </body>
 

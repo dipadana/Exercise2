@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dipadana Calculator</title>
+</head>
+
+<body>
+
+    <h1>Dipadana Putu Calculator Prototype</h1>
+
+    <input type="number" name="num" id="num" />
+    <input type="number" name="num2" id="num2" />
+    <input type="number" name="num3" id="result">
+
+    <button id="btn4" onclick="input.value += 4">4</button>
+    <button id="btn5" onclick="input.value += 5">5</button>
+
+    <button id="add" onclick="input = document.querySelector('#num2'); operasi = 'plus'; console.log('plus')">+</button>
+    <button id="add"
+        onclick="input = document.querySelector('#num2'); operasi = 'minus'; console.log('minus')">-</button>
+
+    <button id="clear" onclick="
+        document.querySelector('#num').value = '';
+        document.querySelector('#num2').value = '';
+        document.querySelector('#result').value = '';
+        input = document.querySelector('#num');
+        ">clear</button>
+
+    <button id="hasil" onclick=" 
+    
+    if (operasi == 'plus') {
+        var jumlah = parseInt(num.value) + parseInt(num2.value);
+        document.querySelector('#result').value = jumlah;
+    }
+    else if (operasi == 'minus') {
+        var jumlah = parseInt(num.value) - parseInt(num2.value);
+        document.querySelector('#result').value = jumlah;
+    } 
+    else {
+        console.log('error');
+    }
+    ">=</button>
+
+    <script>
+
+
+        var input = document.querySelector('#num');
+    </script>
+</body>
+
+</html>
