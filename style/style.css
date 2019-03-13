@@ -3,7 +3,7 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .col-12{
@@ -61,17 +61,17 @@
     font-family: gs-medium;
     background-color: #424242;
     color: #fefefe;
-    border-bottom: 5px solid lightgray;
+    border-bottom: 3px solid lightgray;
     padding-right: 25px;
 }
 
-
-
 .btn, #divide, 
 #multiply, #minus,
-#plus, #clear{
+#plus, #clear, 
+#dot, #delete,
+.btnc{
     width: 25%;
-    height: 100px;
+    height: 90px;
     border: none;
     font-size: 25px;
     font-family: gs-bold;
@@ -80,14 +80,24 @@
     transition: all 0.1s ease-in-out;
 }
 
-.btn:hover, #clear:hover{
+.btn:hover, #clear:hover, 
+#delete:hover, .btnc:hover, 
+#dot:hover{
     background-color: #dbd2d2;
     color: #424242;
 }
 
+.btn:active, #clear:active, 
+#delete:active, .btnc:active, 
+#dot:active, #btn:focus{
+    background-color: #979090;
+    color: #353535;
+    outline: none;
+}
+
 #hasil{
     width: 25%;
-    height: 100px;
+    height: 90px;
     border: none;
     font-size: 25px;
     font-family: gs-bold;
@@ -95,8 +105,13 @@
     color: #dbd2d2;
 }
 
+#hasil:hover{
+    background-color: #dbd2d2;
+    color: #ff6f6f;
+}
+
 #multiply, #divide,
-#plus, #minus {
+#plus, #minus{
     background-color: #575757;
     color: #ff6f6f;
 }
@@ -105,4 +120,23 @@
 #minus:hover, #plus:hover{
     background-color: #fbefef;
     color: #ff6f6f;
+}
+
+.title-box{
+    background-color: #5c5b5b;
+    width: 425px;
+    text-align: right;
+}
+
+.title{
+    font-family: gs-bold;
+    font-size: 24px;
+    margin: 5px 20px;
+    color: #fbefef;
+}
+
+span{
+    font-family: gs-medium;
+    font-size: 10px;
+    color: #fbefef;
 }
