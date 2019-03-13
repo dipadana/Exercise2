@@ -78,6 +78,7 @@
     background-color: #424242;
     color: #dbd2d2;
     transition: all 0.1s ease-in-out;
+    outline: none !important;
 }
 
 .btn:hover, #clear:hover, 
@@ -89,10 +90,9 @@
 
 .btn:active, #clear:active, 
 #delete:active, .btnc:active, 
-#dot:active, #btn:focus{
+#dot:active{
     background-color: #979090;
-    color: #353535;
-    outline: none;
+    color: #353535;   
 }
 
 #hasil{
@@ -103,6 +103,7 @@
     font-family: gs-bold;
     background-color: #4d4d4d;
     color: #dbd2d2;
+    outline: none !important;
 }
 
 #hasil:hover{
@@ -110,16 +111,27 @@
     color: #ff6f6f;
 }
 
+#hasil:active{
+    background-color: #a39b9b;
+    color: #ff5151;
+}
+
 #multiply, #divide,
 #plus, #minus{
     background-color: #575757;
-    color: #ff6f6f;
+    color: #ff7979;
 }
 
 #divide:hover, #multiply:hover, 
 #minus:hover, #plus:hover{
     background-color: #fbefef;
     color: #ff6f6f;
+}
+
+#divide:active, #multiply:active, 
+#minus:active, #plus:active{
+    background-color: #a39b9b;
+    color: #ff5151;
 }
 
 .title-box{
