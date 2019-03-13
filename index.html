@@ -14,8 +14,13 @@
 
     <section id="display">
         <div class="container">
+
+            <div id="box-history">
+                <p id="history"></p>
+            </div>
             <input type="text" name="num" id="num" readonly />
             <input type="text" name="result" id="result" readonly />
+
         </div>
     </section>
 
@@ -89,7 +94,7 @@
                     document.querySelector('#multiply').removeAttribute('disabled');
                     document.querySelector('#divide').removeAttribute('disabled');
                     input.value += '1';
-                ">4</button>
+                ">1</button>
 
             <button class="btn" onclick="
                     document.querySelector('#plus').removeAttribute('disabled');
@@ -97,7 +102,7 @@
                     document.querySelector('#multiply').removeAttribute('disabled');
                     document.querySelector('#divide').removeAttribute('disabled');
                     input.value += '2';
-                ">5</button>
+                ">2</button>
 
             <button class="btn" onclick="
                     document.querySelector('#plus').removeAttribute('disabled');
@@ -105,7 +110,7 @@
                     document.querySelector('#multiply').removeAttribute('disabled');
                     document.querySelector('#divide').removeAttribute('disabled');
                     input.value += '3';
-                ">6</button>
+                ">3</button>
 
             <button id="minus" onclick="input.value += ' - ';
                         attr = document.createAttribute('disabled');
@@ -160,7 +165,7 @@
 
 
 
-    <div id="history"></div>
+
 
     <script>
         var hasil = document.getElementById('result');
