@@ -13,12 +13,9 @@
 <body>
 
     <section id="display">
-        <div>
-
-        </div>
         <div class="container">
             <div class="title-box">
-                <p class="title"> Calculator <span>Ver.2.0</span></p>
+                <p class="title"> Calculator <span>Ver.2.1</span></p>
             </div>
             <div id="box-history">
                 <p id="history"></p>
@@ -30,61 +27,57 @@
 
     <section id="button">
         <div class="container">
+            <button class="btnc" onclick="
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled')
+                document.querySelector('#dot').removeAttribute('disabled');
+                input.value += '(';
+            ">(</button>
 
             <button class="btnc" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled')
-                    document.querySelector('#dot').removeAttribute('disabled');
-                    input.value += '(';
-                ">(</button>
-
-            <button class="btnc" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled')
-                    document.querySelector('#dot').removeAttribute('disabled');
-                    input.value += ')';
-                ">)</button>
-
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled')
+                document.querySelector('#dot').removeAttribute('disabled');
+                input.value += ')';
+            ">)</button>
 
             <button id="dot" onclick="input.value += '.';
                 attr = document.createAttribute('disabled');
                 document.querySelector('#dot').setAttributeNode(attr);
             ">.</button>
 
-
-
             <button id="divide" onclick="input.value += ' / ';
-                    attr = document.createAttribute('disabled');
-                    document.querySelector('#divide').setAttributeNode(attr);
-                ">/</button>
+                attr = document.createAttribute('disabled');
+                document.querySelector('#divide').setAttributeNode(attr);
+            ">/</button>
 
             <button class="btn" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled');
-                    input.value += '7';
-                ">7</button>
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled');
+                input.value += '7';
+            ">7</button>
 
             <button class="btn" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled');
-                    input.value += '8';
-                ">8</button>
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled');
+                input.value += '8';
+            ">8</button>
 
             <button class="btn" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled');
-                    input.value += '9';
-                ">9</button>
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled');
+                input.value += '9';
+            ">9</button>
 
             <button id="multiply" onclick="input.value += ' * ';
                 attr = document.createAttribute('disabled');
@@ -92,28 +85,28 @@
             ">x</button>
 
             <button class="btn" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled');
-                    input.value += '4';
-                ">4</button>
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled');
+                input.value += '4';
+            ">4</button>
 
             <button class="btn" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled');
-                    input.value += '5';
-                ">5</button>
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled');
+                input.value += '5';
+            ">5</button>
 
             <button class="btn" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled');
-                    input.value += '6';
-                ">6</button>
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled');
+                input.value += '6';
+            ">6</button>
 
             <button id="minus" onclick="input.value += ' - ';
                     attr = document.createAttribute('disabled');
@@ -121,28 +114,28 @@
             ">-</button>
 
             <button class="btn" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled');
-                    input.value += '1';
-                ">1</button>
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled');
+                input.value += '1';
+            ">1</button>
 
             <button class="btn" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled');
-                    input.value += '2';
-                ">2</button>
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled');
+                input.value += '2';
+            ">2</button>
 
             <button class="btn" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled');
-                    input.value += '3';
-                ">3</button>
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled');
+                input.value += '3';
+            ">3</button>
 
             <button id="plus" onclick="input.value += ' + ';
                 attr = document.createAttribute('disabled');
@@ -150,65 +143,33 @@
             ">+</button>
 
             <button class="btn" onclick="
-                    document.querySelector('#plus').removeAttribute('disabled');
-                    document.querySelector('#minus').removeAttribute('disabled');
-                    document.querySelector('#multiply').removeAttribute('disabled');
-                    document.querySelector('#divide').removeAttribute('disabled')
-                    document.querySelector('#dot').removeAttribute('disabled');
-                    input.value += '0';
-                ">0</button>
+                document.querySelector('#plus').removeAttribute('disabled');
+                document.querySelector('#minus').removeAttribute('disabled');
+                document.querySelector('#multiply').removeAttribute('disabled');
+                document.querySelector('#divide').removeAttribute('disabled')
+                document.querySelector('#dot').removeAttribute('disabled');
+                input.value += '0';
+            ">0</button>
 
             <button id="clear" onclick="
-                    document.getElementById('history').innerHTML = input.value + hasil.value;
-                    hasil.value = ''; 
-                    input.value = '';
-                ">C</button>
+                document.getElementById('history').innerHTML = input.value + hasil.value;
+                hasil.value = ''; 
+                input.value = '';
+            ">C</button>
 
             <button id="delete" onclick="
                 input.value = input.value.substring(0 , input.value.length-1);
             ">DEL</button>
 
-
             <button id="hasil" onclick=" 
-                    hasil.value = ' = ' + eval(input.value);
-                ">=</button>
-
-
-
+                hasil.value = ' = ' + eval(input.value);
+            ">=</button>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script>
         var hasil = document.getElementById('result');
         var input = document.querySelector('#num');
-
-
-
-
     </script>
 </body>
 
